@@ -1,0 +1,26 @@
+---
+import { copy, stats, asset } from '../lib/data.js';
+const [first, ...rest] = Astro.props.name.split(' ');
+// Bio and lead photo appear once they're filled in on the sheet
+const side = copy.bio || copy.leadPhoto;
+---
+<div class="band hero-band">
+  <div class="wrap">
+    <header class="site">
+      <div class="wordmark">{Astro.props.name}</div>
+      <nav class="site" aria-label="Main">
+        <a href="#work">Work</a><a href="#explore">Explore</a><a href="#method">Codebook</a><a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <div class={`hero${side ? '' : ' solo'}`}>
+      <div class="hero-main"><h1><span>{first}</span> <span>{rest.join(' ')}</span></h1></div>
+      {side && (
+        <div class="hero-side">
+          {copy.leadPhoto && <figure class="lead-photo"><img src={asset(`images/${copy.leadPhoto}`)} alt={`Portrait of ${Astro.props.name}`} /></figure>}
+          {copy.bio && <p class="bio">{copy.bio}</p>}
+        </div>
+      )}
+    </div>
+    <div class="dek-row">{stats.map(([k, v]) => <span>{k} <b>{v}</b></span>)}</div>
+  </div>
+</div>

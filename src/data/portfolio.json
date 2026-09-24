@@ -1,0 +1,887 @@
+{
+ "pieces": [
+  {
+   "id": "non-resident-alien-life-as-an-international-student-at",
+   "title": "'Non-Resident Alien': Life as an International Student at Colorado College",
+   "outlet": "catalyst",
+   "date": "2019-10-28",
+   "datePrecision": "day",
+   "url": "https://thecatalystnews.com/2019/10/28/non-resident-alien-life-as-an-international-student-at-colorado-college/",
+   "featured": false,
+   "method": "Reported",
+   "themes": [
+    "Identity",
+    "Education"
+   ],
+   "places": [
+    "Colorado Springs"
+   ],
+   "era": "College reporting",
+   "line": "",
+   "image": {
+    "src": "images/pieces/non-resident-alien-life-as-an-international-student-at.jpg",
+    "credit": "via The Catalyst",
+    "fit": "cover"
+   },
+   "n": "01"
+  },
+  {
+   "id": "slow-texts-in-the-age-of-fast-communication-cc-grads-to",
+   "title": "Slow Texts in the Age of Fast Communication: CC grads to launch scheduled messaging app, PonyPal",
+   "outlet": "catalyst",
+   "date": "2019-11-10",
+   "datePrecision": "day",
+   "url": "https://thecatalystnews.com/2019/11/10/slow-texts-in-the-age-of-fast-communication-cc-grads-to-launch-scheduled-messaging-app-ponypal/",
+   "featured": false,
+   "method": "Reported",
+   "themes": [
+    "Technology",
+    "Campus life"
+   ],
+   "places": [
+    "Colorado Springs"
+   ],
+   "era": "College reporting",
+   "line": "",
+   "image": {
+    "src": "images/pieces/slow-texts-in-the-age-of-fast-communication-cc-grads-to.jpg",
+    "credit": "via The Catalyst",
+    "fit": "cover"
+   },
+   "n": "02"
+  },
+  {
+   "id": "student-by-day-musician-by-night-the-colorado-college",
+   "title": "Student By Day, Musician By Night: The Colorado College Bluegrass Ensemble",
+   "outlet": "catalyst",
+   "date": "2019-12-07",
+   "datePrecision": "day",
+   "url": "https://thecatalystnews.com/2019/12/07/student-by-day-musician-by-night-the-colorado-college-bluegrass-ensemble/",
+   "featured": false,
+   "method": "Reported",
+   "themes": [
+    "Culture",
+    "Campus life",
+    "Music"
+   ],
+   "places": [
+    "Colorado Springs"
+   ],
+   "era": "College reporting",
+   "line": "",
+   "image": {
+    "src": "images/pieces/student-by-day-musician-by-night-the-colorado-college.jpg",
+    "credit": "via The Catalyst",
+    "fit": "cover"
+   },
+   "n": "03"
+  },
+  {
+   "id": "the-worst-miss-ever-the-beginners-guide-to-expected-goals",
+   "title": "\"The Worst Miss Ever\": The Beginner's Guide to Expected Goals (Part 1)",
+   "outlet": "raumdata",
+   "date": "2020-01-19",
+   "datePrecision": "day",
+   "url": "https://raumdatafootball.com/2020/01/19/the-worst-miss-ever-a-beginners-guide-to-expected-goals-part-1/",
+   "featured": false,
+   "method": "Data analysis",
+   "themes": [
+    "Football",
+    "Data"
+   ],
+   "places": [],
+   "era": "Football analytics",
+   "line": "",
+   "image": null,
+   "n": "04"
+  },
+  {
+   "id": "when-kids-copy-their-parents-style-the-rebirth-of-vinyl",
+   "title": "When Kids Copy Their Parents' Style: The Rebirth of Vinyl",
+   "outlet": "catalyst",
+   "date": "2020-01-24",
+   "datePrecision": "day",
+   "url": "https://thecatalystnews.com/2020/01/24/when-kids-copy-their-parents-style-the-rebirth-of-vinyl/",
+   "featured": false,
+   "method": "Reported",
+   "themes": [
+    "Culture",
+    "Music"
+   ],
+   "places": [
+    "Colorado Springs"
+   ],
+   "era": "College reporting",
+   "line": "",
+   "image": {
+    "src": "images/pieces/when-kids-copy-their-parents-style-the-rebirth-of-vinyl.jpg",
+    "credit": "via The Catalyst",
+    "fit": "cover"
+   },
+   "n": "05"
+  },
+  {
+   "id": "how-to-deal-with-that-burning-unrequited-love-for-your-crush",
+   "title": "How to Deal with That Burning (Unrequited) Love For Your Crush",
+   "outlet": "catalyst",
+   "date": "2020-01-31",
+   "datePrecision": "day",
+   "url": "https://thecatalystnews.com/2020/01/31/how-to-deal-with-that-burning-unrequited-love-for-your-crush/",
+   "featured": false,
+   "method": "Column",
+   "themes": [
+    "Relationships",
+    "Campus life"
+   ],
+   "places": [
+    "Colorado Springs"
+   ],
+   "era": "College reporting",
+   "line": "",
+   "image": {
+    "src": "images/pieces/how-to-deal-with-that-burning-unrequited-love-for-your-crush.jpg",
+    "credit": "via The Catalyst",
+    "fit": "cover"
+   },
+   "n": "06"
+  },
+  {
+   "id": "are-we-living-in-a-computer-simulation",
+   "title": "Are We Living in a Computer Simulation?",
+   "outlet": "catalyst",
+   "date": "2020-03-06",
+   "datePrecision": "day",
+   "url": "https://thecatalystnews.com/2020/03/06/are-we-living-in-a-computer-simulation/",
+   "featured": false,
+   "method": "Column",
+   "themes": [
+    "Technology",
+    "Philosophy"
+   ],
+   "places": [],
+   "era": "College reporting",
+   "line": "",
+   "image": {
+    "src": "images/pieces/are-we-living-in-a-computer-simulation.jpg",
+    "credit": "via The Catalyst",
+    "fit": "cover"
+   },
+   "n": "07"
+  },
+  {
+   "id": "an-xg-model-for-everyone-in-20-minutes-ish",
+   "title": "An xG Model for Everyone in 20 minutes (ish)",
+   "outlet": "raumdata",
+   "date": "2020-03-20",
+   "datePrecision": "day",
+   "url": "https://raumdatafootball.com/2020/03/20/an-xg-model-for-everyone-in-20-minutes-ish/",
+   "featured": false,
+   "method": "Data analysis",
+   "themes": [
+    "Football",
+    "Data",
+    "Technology"
+   ],
+   "places": [],
+   "era": "Football analytics",
+   "line": "",
+   "image": {
+    "src": "images/pieces/an-xg-model-for-everyone-in-20-minutes-ish.jpg",
+    "credit": "via Raumdata",
+    "fit": "cover"
+   },
+   "n": "08"
+  },
+  {
+   "id": "the-next-haland-why-salzburgs-patson-daka-may-be-on-the",
+   "title": "The Next Håland? Why Salzburg's Patson Daka may be on the radar of Europe's top clubs",
+   "outlet": "raumdata",
+   "date": "2020-03-22",
+   "datePrecision": "day",
+   "url": "https://raumdatafootball.com/2020/03/22/the-next-haland-why-salzburgs-patson-daka-may-be-on-the-radar-of-europes-top-clubs-and-rightly-so/",
+   "featured": false,
+   "method": "Data analysis",
+   "themes": [
+    "Football",
+    "Africa / Zambia",
+    "Data"
+   ],
+   "places": [
+    "Salzburg",
+    "Lusaka"
+   ],
+   "era": "Football analytics",
+   "line": "",
+   "image": {
+    "src": "images/pieces/the-next-haland-why-salzburgs-patson-daka-may-be-on-the.jpg",
+    "credit": "via Raumdata",
+    "fit": "cover"
+   },
+   "n": "09"
+  },
+  {
+   "id": "chelseas-kepa-is-statistically-the-worst-goalkeeper-in-the",
+   "title": "Chelsea's Kepa is (statistically) the worst goalkeeper in the Premier League",
+   "outlet": "raumdata",
+   "date": "2020-03-28",
+   "datePrecision": "day",
+   "url": "https://raumdatafootball.com/2020/03/28/chelseas-kepa-is-statistically-the-worst-goalkeeper-in-the-premier-league/",
+   "featured": false,
+   "method": "Data analysis",
+   "themes": [
+    "Football",
+    "Data"
+   ],
+   "places": [
+    "London"
+   ],
+   "era": "Football analytics",
+   "line": "",
+   "image": {
+    "src": "images/pieces/chelseas-kepa-is-statistically-the-worst-goalkeeper-in-the.jpg",
+    "credit": "via Raumdata",
+    "fit": "cover"
+   },
+   "n": "10"
+  },
+  {
+   "id": "americanah-personal-reflections-on-moving-to-the-us",
+   "title": "'Americanah': Personal Reflections on Moving to the US — Identity, Challenges, and Opportunities",
+   "outlet": "catalyst",
+   "date": "2020-05-14",
+   "datePrecision": "day",
+   "url": "https://thecatalystnews.com/2020/05/14/americanah-personal-reflections-on-moving-to-the-us-identity-challenges-and-opportunities/",
+   "featured": false,
+   "method": "Personal essay",
+   "themes": [
+    "Identity",
+    "Race",
+    "Africa / Zambia"
+   ],
+   "places": [
+    "Colorado Springs",
+    "Lusaka"
+   ],
+   "era": "College reporting",
+   "line": "",
+   "image": {
+    "src": "images/pieces/americanah-personal-reflections-on-moving-to-the-us.jpg",
+    "credit": "via The Catalyst",
+    "fit": "cover"
+   },
+   "n": "11"
+  },
+  {
+   "id": "alisson-becker-and-the-evolution-of-goalkeepers-the-numbers",
+   "title": "Alisson Becker and the Evolution of Goalkeepers (The Numbers Behind the World's #1)",
+   "outlet": "raumdata",
+   "date": "2020-06-03",
+   "datePrecision": "day",
+   "url": "https://raumdatafootball.com/2020/06/03/alisson-becker-and-the-evolution-of-goalkeepers/",
+   "featured": true,
+   "method": "Data analysis",
+   "themes": [
+    "Football",
+    "Data"
+   ],
+   "places": [
+    "Liverpool"
+   ],
+   "era": "Football analytics",
+   "line": "While the idea of a goalkeeper as an ‘attacker’ may not sound as revolutionary today as it did in the 1980s, it remains an area of the game in which there is certainly room for innovation. Liverpool’s Alisson Becker, winner of FIFA’s The Best Goalkeeper award, is a case in point.",
+   "image": {
+    "src": "images/pieces/alisson-becker-and-the-evolution-of-goalkeepers-the-numbers.jpg",
+    "credit": "via Raumdata",
+    "fit": "contain"
+   },
+   "n": "12"
+  },
+  {
+   "id": "is-the-premier-league-becoming-less-competitive",
+   "title": "Is the Premier League Becoming Less Competitive?",
+   "outlet": "raumdata",
+   "date": "2020-07-08",
+   "datePrecision": "day",
+   "url": "https://raumdatafootball.com/2020/07/08/is-the-premier-league-becoming-less-competitive/",
+   "featured": false,
+   "method": "Data analysis",
+   "themes": [
+    "Football",
+    "Data"
+   ],
+   "places": [
+    "England"
+   ],
+   "era": "Football analytics",
+   "line": "",
+   "image": {
+    "src": "images/pieces/is-the-premier-league-becoming-less-competitive.jpg",
+    "credit": "via Raumdata",
+    "fit": "cover"
+   },
+   "n": "13"
+  },
+  {
+   "id": "the-video-game-that-stole-my-summer",
+   "title": "The Video Game That Stole My Summer",
+   "outlet": "catalyst",
+   "date": "2020-08-27",
+   "datePrecision": "day",
+   "url": "https://thecatalystnews.com/2020/08/27/the-video-game-that-stole-my-summer/",
+   "featured": false,
+   "method": "Personal essay",
+   "themes": [
+    "Technology",
+    "Culture",
+    "Video Games"
+   ],
+   "places": [],
+   "era": "College reporting",
+   "line": "",
+   "image": {
+    "src": "images/pieces/the-video-game-that-stole-my-summer.jpg",
+    "credit": "via The Catalyst",
+    "fit": "cover"
+   },
+   "n": "14"
+  },
+  {
+   "id": "link-one-stanford-students-mission-to-anonymously-connect",
+   "title": "'Link': One Stanford Student's Mission to Anonymously Connect Mutual Crushes May Be Coming to Colorado College",
+   "outlet": "catalyst",
+   "date": "2020-10-23",
+   "datePrecision": "day",
+   "url": "https://thecatalystnews.com/2020/10/22/link-one-stanford-students-mission-to-anonymously-connect-mutual-crushes-may-be-coming-to-colorado-college/",
+   "featured": true,
+   "method": "Reported",
+   "themes": [
+    "Technology",
+    "Relationships",
+    "Campus life"
+   ],
+   "places": [
+    "Colorado Springs",
+    "Stanford"
+   ],
+   "era": "College reporting",
+   "line": "Imagine being able to tell your crush how you feel without the fear of being rejected. In a sense, that is the mission of Link — a website founded at Stanford by sophomore Ishan Gandhi that could soon expand to colleges around the U.S.",
+   "image": {
+    "src": "images/pieces/link-one-stanford-students-mission-to-anonymously-connect.jpg",
+    "credit": "Screenshot: Joshua Kalenga",
+    "fit": "top"
+   },
+   "n": "15"
+  },
+  {
+   "id": "coded-bias-how-artificial-intelligence-can-fuel",
+   "title": "'Coded Bias': How Artificial Intelligence Can Fuel Discrimination and Inequality",
+   "outlet": "catalyst",
+   "date": "2020-11-20",
+   "datePrecision": "day",
+   "url": "https://thecatalystnews.com/2020/11/19/coded-bias-how-artificial-intelligence-can-fuel-discrimination-and-inequality/",
+   "featured": false,
+   "method": "Review",
+   "themes": [
+    "Technology",
+    "Race",
+    "Data"
+   ],
+   "places": [],
+   "era": "College reporting",
+   "line": "",
+   "image": {
+    "src": "images/pieces/coded-bias-how-artificial-intelligence-can-fuel.jpg",
+    "credit": "via The Catalyst",
+    "fit": "cover"
+   },
+   "n": "16"
+  },
+  {
+   "id": "feet-of-gold-hand-of-god-soccer-legend-diego-maradona",
+   "title": "'Feet of Gold, Hand of God:' Soccer Legend Diego Maradona Passes Away at Age 60",
+   "outlet": "catalyst",
+   "date": "2020-12-04",
+   "datePrecision": "day",
+   "url": "https://thecatalystnews.com/2020/12/03/feet-of-gold-hand-of-god-soccer-legend-diego-maradona-passes-away-at-age-60/",
+   "featured": false,
+   "method": "Reported",
+   "themes": [
+    "Football",
+    "Drugs",
+    "Celebrity"
+   ],
+   "places": [
+    "Buenos Aires",
+    "Naples"
+   ],
+   "era": "College reporting",
+   "line": "",
+   "image": {
+    "src": "images/pieces/feet-of-gold-hand-of-god-soccer-legend-diego-maradona.jpg",
+    "credit": "via The Catalyst",
+    "fit": "cover"
+   },
+   "n": "17"
+  },
+  {
+   "id": "how-to-care-for-your-introvert",
+   "title": "How to Care for Your Introvert",
+   "outlet": "catalyst",
+   "date": "2021-03-05",
+   "datePrecision": "day",
+   "url": "https://thecatalystnews.com/2021/03/04/how-to-care-for-your-introvert/",
+   "featured": false,
+   "method": "Column",
+   "themes": [
+    "Identity",
+    "Relationships",
+    "Personality"
+   ],
+   "places": [],
+   "era": "College reporting",
+   "line": "",
+   "image": {
+    "src": "images/pieces/how-to-care-for-your-introvert.jpg",
+    "credit": "via The Catalyst",
+    "fit": "cover"
+   },
+   "n": "18"
+  },
+  {
+   "id": "how-to-tell-the-story-of-a-nation-an-interview-with-namwali",
+   "title": "How to Tell the Story of a Nation: An Interview with Namwali Serpell, Author of 'The Old Drift'",
+   "outlet": "catalyst",
+   "date": "2021-03-12",
+   "datePrecision": "day",
+   "url": "https://thecatalystnews.com/2021/03/11/how-to-tell-the-story-of-a-nation-an-interview-with-namwili-serpell-author-of-the-old-drift/",
+   "featured": false,
+   "method": "Interview",
+   "themes": [
+    "Africa / Zambia",
+    "Culture",
+    "Identity"
+   ],
+   "places": [
+    "Lusaka"
+   ],
+   "era": "College reporting",
+   "line": "",
+   "image": {
+    "src": "images/pieces/how-to-tell-the-story-of-a-nation-an-interview-with-namwali.jpg",
+    "credit": "via The Catalyst",
+    "fit": "cover"
+   },
+   "n": "19"
+  },
+  {
+   "id": "kick-it-out-racism-in-soccer-once-again-in-the-spotlight",
+   "title": "Kick it out: Racism in soccer once again in the spotlight following continued abuse of Black players",
+   "outlet": "catalyst",
+   "date": "2021-04-02",
+   "datePrecision": "day",
+   "url": "https://thecatalystnews.com/2021/04/01/kick-it-out-racism-in-soccer-once-again-in-the-spotlight-following-continued-abuse-of-black-players/",
+   "featured": false,
+   "method": "Reported",
+   "themes": [
+    "Football",
+    "Race"
+   ],
+   "places": [
+    "England"
+   ],
+   "era": "College reporting",
+   "line": "",
+   "image": {
+    "src": "images/pieces/kick-it-out-racism-in-soccer-once-again-in-the-spotlight.jpg",
+    "credit": "via The Catalyst",
+    "fit": "cover"
+   },
+   "n": "20"
+  },
+  {
+   "id": "confessions-of-an-obsessive-soccer-fan",
+   "title": "Confessions of an obsessive soccer fan",
+   "outlet": "catalyst",
+   "date": "2021-10-01",
+   "datePrecision": "day",
+   "url": "https://thecatalystnews.com/2021/09/30/confessions-of-an-obsessive-soccer-fan/",
+   "featured": false,
+   "method": "Personal essay",
+   "themes": [
+    "Football",
+    "Identity",
+    "Africa / Zambia"
+   ],
+   "places": [
+    "Liverpool",
+    "Lusaka"
+   ],
+   "era": "College reporting",
+   "line": "",
+   "image": {
+    "src": "images/pieces/confessions-of-an-obsessive-soccer-fan.jpg",
+    "credit": "via The Catalyst",
+    "fit": "cover"
+   },
+   "n": "21"
+  },
+  {
+   "id": "perspectives-in-their-own-words",
+   "title": "Perspectives: In their own words",
+   "outlet": "catalyst",
+   "date": "2021-12-17",
+   "datePrecision": "day",
+   "url": "https://thecatalystnews.com/2021/12/17/perspectives-in-their-own-words-12/",
+   "featured": false,
+   "method": "Interview",
+   "themes": [
+    "Campus life",
+    "Education"
+   ],
+   "places": [
+    "Colorado Springs",
+    "Denver"
+   ],
+   "era": "College reporting",
+   "line": "",
+   "image": {
+    "src": "images/pieces/perspectives-in-their-own-words.jpg",
+    "credit": "via The Catalyst",
+    "fit": "cover"
+   },
+   "n": "22"
+  },
+  {
+   "id": "how-to-travel-across-the-world-amid-the-omicron-surge",
+   "title": "How to travel across the world amid the Omicron surge",
+   "outlet": "catalyst",
+   "date": "2022-01-27",
+   "datePrecision": "day",
+   "url": "https://thecatalystnews.com/2022/01/27/how-to-make-and-keep-friends-in-college-as-an-introvert/",
+   "featured": false,
+   "method": "Personal essay",
+   "themes": [
+    "Identity",
+    "Africa / Zambia"
+   ],
+   "places": [
+    "Lusaka",
+    "Denver",
+    "Frankfurt",
+    "Johannesburg"
+   ],
+   "era": "College reporting",
+   "line": "",
+   "image": {
+    "src": "images/pieces/how-to-travel-across-the-world-amid-the-omicron-surge.jpg",
+    "credit": "via The Catalyst",
+    "fit": "cover"
+   },
+   "n": "23"
+  },
+  {
+   "id": "will-you-meet-your-spouse-at-colorado-college",
+   "title": "Will You Meet Your Spouse at Colorado College?",
+   "outlet": "catalyst",
+   "date": "2022-02-25",
+   "datePrecision": "day",
+   "url": "https://thecatalystnews.com/2022/02/24/will-you-meet-your-spouse-at-colorado-college/",
+   "featured": true,
+   "method": "Reported",
+   "themes": [
+    "Relationships",
+    "Campus life"
+   ],
+   "places": [
+    "Colorado Springs"
+   ],
+   "era": "College reporting",
+   "line": "John Capers ’21 and Kelly Yue ’21 were just first-years when they first locked eyes on a block break trip to New York City. Four years and more than 30 blocks later, the young couple, now living together in Chicago, are preparing for their wedding this coming summer.",
+   "image": {
+    "src": "images/pieces/will-you-meet-your-spouse-at-colorado-college.jpg",
+    "credit": "via The Catalyst",
+    "fit": "cover"
+   },
+   "n": "24"
+  },
+  {
+   "id": "kabwe-ka-mukuba-land-of-smelting",
+   "title": "Kabwe Ka Mukuba (Land of Smelting)",
+   "outlet": "film",
+   "date": "2023-03-01",
+   "datePrecision": "year",
+   "url": "https://vimeo.com/835882477/1ebd23dd99",
+   "featured": true,
+   "method": "Documentary",
+   "themes": [
+    "Environment",
+    "Africa / Zambia"
+   ],
+   "places": [
+    "Kabwe"
+   ],
+   "era": "Documentary",
+   "line": "",
+   "image": {
+    "src": "images/pieces/kabwe-ka-mukuba-land-of-smelting.jpg",
+    "credit": "Photo: Joshua Kalenga",
+    "fit": "cover"
+   },
+   "n": "25",
+   "project": "kabwe"
+  },
+  {
+   "id": "ethics-under-the-lens-reflections-on-filming-in-the-worlds",
+   "title": "Ethics Under the Lens: Reflections on Filming in 'The World's Most Toxic Town'",
+   "outlet": "catalyst",
+   "date": "2023-05-19",
+   "datePrecision": "day",
+   "url": "https://thecatalystnews.com/2023/05/19/ethics-under-the-lens-reflections-on-filming-in-the-worlds-most-toxic-town/",
+   "featured": true,
+   "method": "Personal essay",
+   "themes": [
+    "Film",
+    "Environment",
+    "Africa / Zambia"
+   ],
+   "places": [
+    "Kabwe"
+   ],
+   "era": "Documentary",
+   "line": "",
+   "image": {
+    "src": "images/pieces/ethics-under-the-lens-reflections-on-filming-in-the-worlds.jpg",
+    "credit": "Photo: Joshua Kalenga",
+    "fit": "cover"
+   },
+   "n": "26",
+   "project": "kabwe"
+  },
+  {
+   "id": "dear-arsenal-fan-welcome-to-the-other-side",
+   "title": "Dear Arsenal Fan, Welcome to the Other Side",
+   "outlet": "substack",
+   "date": "2026-05-23",
+   "datePrecision": "day",
+   "url": "https://noteverythingisaboutfootball.substack.com/p/dear-arsenal-fan-welcome-to-the-other",
+   "featured": false,
+   "method": "Personal essay",
+   "themes": [
+    "Football",
+    "Masculinity"
+   ],
+   "places": [
+    "London"
+   ],
+   "era": "Narrative nonfiction",
+   "line": "",
+   "image": null,
+   "n": "27"
+  },
+  {
+   "id": "how-luis-suarez-ended-my-childhood",
+   "title": "How Luis Suárez Ended My Childhood",
+   "outlet": "substack",
+   "date": "2026-06-02",
+   "datePrecision": "day",
+   "url": "https://noteverythingisaboutfootball.substack.com/p/how-luis-suarez-ended-my-childhood",
+   "featured": true,
+   "method": "Personal essay",
+   "themes": [
+    "Football",
+    "Africa / Zambia",
+    "Identity"
+   ],
+   "places": [
+    "Lusaka",
+    "Johannesburg",
+    "Accra",
+    "Montevideo"
+   ],
+   "era": "Narrative nonfiction",
+   "line": "My brother stood at the top of the stairs, peering down through the square opening toward the front door. I came in crying, folded into our mother’s arms.",
+   "image": null,
+   "n": "28"
+  }
+ ],
+ "outlets": [
+  {
+   "id": "catalyst",
+   "name": "The Catalyst",
+   "short": "The Catalyst"
+  },
+  {
+   "id": "raumdata",
+   "name": "Raumdata",
+   "short": "Raumdata"
+  },
+  {
+   "id": "film",
+   "name": "Film",
+   "short": "Film"
+  },
+  {
+   "id": "substack",
+   "name": "Not Everything's About Football",
+   "short": "Substack"
+  }
+ ],
+ "lists": {
+  "methods": [
+   "Reported",
+   "Data analysis",
+   "Personal essay",
+   "Interview",
+   "Documentary",
+   "Visualization",
+   "Column",
+   "Review"
+  ],
+  "themes": [
+   "Football",
+   "Africa / Zambia",
+   "Technology",
+   "Identity",
+   "Culture",
+   "Data",
+   "Race",
+   "Education",
+   "Environment",
+   "Film",
+   "Relationships",
+   "Campus life",
+   "Music",
+   "Philosophy",
+   "Video Games",
+   "Drugs",
+   "Celebrity",
+   "Personality",
+   "Masculinity"
+  ],
+  "eras": [
+   "College reporting",
+   "Football analytics",
+   "Documentary",
+   "Narrative nonfiction",
+   "Data journalism"
+  ]
+ },
+ "places": {
+  "Accra": {
+   "lon": -0.19,
+   "lat": 5.6,
+   "label": "l"
+  },
+  "Buenos Aires": {
+   "lon": -58.38,
+   "lat": -34.6,
+   "label": "l"
+  },
+  "Colorado Springs": {
+   "lon": -104.82,
+   "lat": 38.83,
+   "label": "r"
+  },
+  "Denver": {
+   "lon": -104.99,
+   "lat": 39.74,
+   "label": "l",
+   "dy": -8
+  },
+  "England": {
+   "lon": -1.6,
+   "lat": 52.6,
+   "label": "r",
+   "dy": -4
+  },
+  "Frankfurt": {
+   "lon": 8.68,
+   "lat": 50.11,
+   "label": "r",
+   "dy": -6
+  },
+  "Johannesburg": {
+   "lon": 27.98,
+   "lat": -26.23,
+   "label": "r"
+  },
+  "Kabwe": {
+   "lon": 28.45,
+   "lat": -14.44,
+   "inset": true,
+   "label": "r"
+  },
+  "Liverpool": {
+   "lon": -2.98,
+   "lat": 53.41,
+   "label": "l",
+   "dy": -6
+  },
+  "London": {
+   "lon": -0.13,
+   "lat": 51.51,
+   "label": "r",
+   "dy": 16
+  },
+  "Lusaka": {
+   "lon": 28.32,
+   "lat": -15.39,
+   "inset": true,
+   "label": "r"
+  },
+  "Montevideo": {
+   "lon": -56.16,
+   "lat": -34.9,
+   "label": "r"
+  },
+  "Naples": {
+   "lon": 14.27,
+   "lat": 40.85,
+   "label": "r"
+  },
+  "Salzburg": {
+   "lon": 13.04,
+   "lat": 47.81,
+   "label": "r"
+  },
+  "Stanford": {
+   "lon": -122.17,
+   "lat": 37.43,
+   "label": "l"
+  }
+ },
+ "projects": {
+  "kabwe": {
+   "name": "Kabwe Ka Mukuba",
+   "film": "kabwe-ka-mukuba-land-of-smelting",
+   "essay": "ethics-under-the-lens-reflections-on-filming-in-the-worlds",
+   "description": "Character-driven documentary about the lead poisoning crisis in Kabwe, Zambia.",
+   "essayNote": "my reflection on reporting, positionality and documentary ethics",
+   "watchLabel": "Watch film",
+   "essayLabel": "Read: Ethics Under the Lens",
+   "credit": "Co-directed with Audrey Colgin-Hubbard"
+  }
+ },
+ "copy": {
+  "bio": "",
+  "leadPhoto": "",
+  "exploreIntro": "",
+  "aboutDataset": "",
+  "email": "kalengajoshua@gmail.com",
+  "links": [
+   {
+    "label": "Substack",
+    "url": "https://substack.com/@joshkalenga"
+   },
+   {
+    "label": "FilmFreeway",
+    "url": "https://filmfreeway.com/KabweKaMakuba"
+   },
+   {
+    "label": "LinkedIn",
+    "url": "https://www.linkedin.com/in/josh-kalenga-99b3b2187/"
+   }
+  ],
+  "colophon": ""
+ }
+}

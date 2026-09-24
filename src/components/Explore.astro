@@ -1,0 +1,53 @@
+---
+import data from '../data/portfolio.json';
+const { pieces, outlets, lists, places, projects, copy } = data;
+// Only what the chart needs goes to the browser
+const payload = {
+  pieces: pieces.map(({ image, featured, ...p }) => p),
+  outlets, lists, places,
+  projects: Object.fromEntries(Object.entries(projects).map(([k, v]) => [k, { name: v.name, credit: v.credit }])),
+  intro: copy.exploreIntro,
+  base: import.meta.env.BASE_URL.replace(/\/?$/, '/'),
+};
+---
+<section id="explore" class="band">
+  <div class="wrap">
+    <div class="sec-head"><h2>Explore the work</h2><span class="meta">Same {pieces.length} records, five lenses</span></div>
+    <div class="explore-top">
+      <div class="lens-bar" role="group" aria-label="Lens">
+        <button type="button" data-lens="map" aria-pressed="true">Map</button>
+        <button type="button" data-lens="timeline" aria-pressed="false">Timeline</button>
+        <button type="button" data-lens="themes" aria-pressed="false">Themes</button>
+        <button type="button" data-lens="methods" aria-pressed="false">Methods</button>
+        <button type="button" data-lens="outlets" aria-pressed="false">Publications</button>
+      </div>
+      <div class="key" id="key" aria-label="Outlets"></div>
+    </div>
+    <p class="lens-caption" id="caption"></p>
+    <div class="explore">
+      <div class="chart" id="chart">
+        <svg id="viz" viewBox="0 0 1000 520" role="img" aria-label="Chart of all pieces"></svg>
+        <div class="tip" id="tip"></div>
+      </div>
+      <aside class="panel" id="panel" aria-live="polite"></aside>
+    </div>
+    <div id="mview" class="mview"></div>
+    <div class="tbl-wrap">
+      <details>
+        <summary>Show all pieces as a table</summary>
+        <table style="margin-top:12px">
+          <thead><tr><th>No.</th><th>Date</th><th>Title</th><th>Outlet</th><th>Method</th></tr></thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </details>
+    </div>
+  </div>
+</section>
+<div class="sheet-bg" id="sheetBg" hidden></div>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Record" hidden></div>
+
+<script type="application/json" id="explore-data" set:html={JSON.stringify(payload)} />
+<script>
+  import { initExplore } from '../scripts/explore.js';
+  initExplore(JSON.parse(document.getElementById('explore-data').textContent));
+</script>

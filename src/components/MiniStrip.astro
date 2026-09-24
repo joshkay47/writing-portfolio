@@ -1,0 +1,14 @@
+---
+import { pieces } from '../lib/data.js';
+import { timeDomain, tscale } from '../lib/timescale.js';
+// Where this piece sits in the whole body of work: one tick per piece, hits raised.
+const { hits = [] } = Astro.props;
+const x = tscale(timeDomain(pieces.map((p) => p.dateObj)), 2, 298, 0.06);
+---
+<svg class="mini" viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true">
+  <line x1="0" x2="300" y1="13" y2="13" stroke="var(--rule)" />
+  {pieces.map((p) => {
+    const on = hits.includes(p.id);
+    return <rect x={x(p.dateObj) - 0.75} width="1.5" y={on ? 0 : 6} height={on ? 13 : 7} fill={on ? 'var(--ink)' : 'var(--slot)'} />;
+  })}
+</svg>

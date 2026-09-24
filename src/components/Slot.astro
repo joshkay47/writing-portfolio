@@ -1,0 +1,7 @@
+---
+// Placeholder for copy that hasn't been written yet. Shows in `npm run dev` only,
+// so an unfinished field never appears on the live site.
+const { label, hint = '', class: cls = '' } = Astro.props;
+const show = import.meta.env.DEV;
+---
+{show && <div class={`slot ${cls}`}><b>{label}</b>{hint}</div>}

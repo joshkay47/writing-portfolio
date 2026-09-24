@@ -1,0 +1,32 @@
+---
+import Slot from './Slot.astro';
+import { copy, lists } from '../lib/data.js';
+const fields = [
+  ['id', 'Running number, in date order'],
+  ['title', 'Headline as published'],
+  ['date', 'Publication or release date; year only when the exact date is unknown'],
+  ['outlet', 'Where it ran'],
+  ['url', 'Link to the original'],
+  ['method', 'One of: ' + lists.methods.join(', ')],
+  ['themes', 'Up to three of: ' + lists.themes.join(', ') + '. The first is the main theme.'],
+  ['places', 'Up to four places. The first is the main place.'],
+  ['era', 'One of: ' + lists.eras.join(', ')],
+  ['project', 'Groups pieces that belong together, e.g. the film and its companion essay'],
+];
+---
+<section id="method" class="band">
+  <div class="wrap">
+    <div class="sec-head"><h2>Codebook</h2><span class="meta">How each piece is recorded</span></div>
+    <div class="codebook">
+      {copy.aboutDataset
+        ? <div class="about">{copy.aboutDataset.split(/\n+/).map((para) => <p>{para}</p>)}</div>
+        : <Slot label="About this dataset" hint="Your methodology note" />}
+      <div class="tbl-wrap" style="margin-top:0">
+        <table class="cb">
+          <thead><tr><th>Field</th><th>What it holds</th></tr></thead>
+          <tbody>{fields.map(([f, v]) => <tr><td class="f">{f}</td><td class="v">{v}</td></tr>)}</tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>

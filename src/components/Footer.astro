@@ -1,0 +1,20 @@
+---
+import Slot from './Slot.astro';
+import { copy } from '../lib/data.js';
+const links = copy.links.filter((l) => l.url);
+---
+<footer id="contact" class="band">
+  <div class="wrap foot">
+    <div>
+      <h2 class="foot-h">Contact</h2>
+      {copy.email ? <p class="email">{copy.email}</p> : <Slot label="Contact" hint="Email address" />}
+    </div>
+    <div>
+      <h2 class="foot-h">Elsewhere</h2>
+      <ul class="links">{links.map((l) => <li><a href={l.url} target="_blank" rel="noopener">{l.label} ↗</a></li>)}</ul>
+    </div>
+    <div>
+      {copy.colophon && <><h2 class="foot-h">Colophon</h2><p class="colophon">{copy.colophon}</p></>}
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,12 @@
+---
+import { asset } from '../lib/data.js';
+const { image, outletName = '' } = Astro.props;
+---
+{image ? (
+  <figure class={`thumb${image.fit && image.fit !== 'cover' ? ' fit-' + image.fit : ''}`}>
+    <img src={asset(image.src)} alt="" loading="lazy" decoding="async" />
+    <figcaption>{image.credit}</figcaption>
+  </figure>
+) : (
+  <div class="thumb none" aria-hidden="true"><span>{outletName}</span></div>
+)}

@@ -1,0 +1,86 @@
+{
+  "_help": "Site settings that don't fit the sheet. Pieces are matched by the start of their title.",
+  "name": "Joshua Kalenga",
+  "outlets": [
+    {
+      "id": "catalyst",
+      "sheet": "The Catalyst",
+      "name": "The Catalyst",
+      "short": "The Catalyst"
+    },
+    {
+      "id": "raumdata",
+      "sheet": "Raumdata",
+      "name": "Raumdata",
+      "short": "Raumdata"
+    },
+    {
+      "id": "film",
+      "sheet": "Film",
+      "name": "Film",
+      "short": "Film"
+    },
+    {
+      "id": "substack",
+      "sheet": "Not Everything's About Football",
+      "name": "Not Everything's About Football",
+      "short": "Substack"
+    }
+  ],
+  "featured": [
+    "How Luis Suárez",
+    {
+      "project": "kabwe"
+    },
+    "Alisson Becker",
+    "Will You Meet Your Spouse",
+    "'Link'"
+  ],
+  "projects": {
+    "kabwe": {
+      "name": "Kabwe Ka Mukuba",
+      "film": "Kabwe Ka Mukuba",
+      "essay": "Ethics Under the Lens",
+      "descriptionFrom": "Kabwe Ka Mukuba description",
+      "essayNoteFrom": "Ethics Under the Lens note",
+      "watchLabel": "Watch film",
+      "essayLabel": "Read: Ethics Under the Lens",
+      "credit": "Co-directed with Audrey Colgin-Hubbard"
+    }
+  },
+  "media": {
+    "_help": "Override an article's thumbnail. src: image URL, or null for no image. fit: cover (default), contain or top.",
+    "Kabwe Ka Mukuba": {
+      "src": "https://i0.wp.com/thecatalystnews.com/wp-content/uploads/2023/05/FEATURES_toxictown_joshkalenga.png?fit=1200%2C600&ssl=1",
+      "credit": "Photo: Joshua Kalenga"
+    },
+    "Ethics Under the Lens": {
+      "src": "https://i0.wp.com/thecatalystnews.com/wp-content/uploads/2023/05/FEATURES_toxictown2_joshkalenga.png?fit=936%2C464&ssl=1",
+      "credit": "Photo: Joshua Kalenga"
+    },
+    "'Link'": {
+      "src": "https://i0.wp.com/thecatalystnews.com/wp-content/uploads/2020/10/LIFE_22link22_JoshuaKalenga_screenshot.jpg?resize=605%2C1024&ssl=1",
+      "credit": "Screenshot: Joshua Kalenga",
+      "fit": "top"
+    },
+    "Alisson Becker": {
+      "fit": "contain"
+    },
+    "How Luis Suárez": {
+      "src": null
+    },
+    "Dear Arsenal Fan": {
+      "src": null
+    }
+  },
+  "contact": {
+    "_help": "Used when the sheet's Contact email / Other links are empty.",
+    "email": "kalengajoshua@gmail.com",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/josh-kalenga-99b3b2187/"
+      }
+    ]
+  }
+}
