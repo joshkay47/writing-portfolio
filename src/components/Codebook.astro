@@ -17,7 +17,7 @@ const fields = [
 <section id="method" class="band">
   <div class="wrap">
     <div class="sec-head"><h2>Codebook</h2><span class="meta">How each piece is recorded</span></div>
-    <div class="codebook">
+    <div class={`codebook${copy.aboutDataset || import.meta.env.DEV ? '' : ' solo'}`}>
       {copy.aboutDataset
         ? <div class="about">{copy.aboutDataset.split(/\n+/).map((para) => <p>{para}</p>)}</div>
         : <Slot label="About this dataset" hint="Your methodology note" />}

@@ -315,3 +315,4 @@ body .foot{border-top:3px solid var(--ink)}
 .hero.solo h1{font-size:clamp(72px,15vw,210px)}
 .hero.solo h1 span{display:inline}
 .hero.solo h1 span:last-child{display:block}
+.codebook.solo{grid-template-columns:1fr}
