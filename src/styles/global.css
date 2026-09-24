@@ -161,7 +161,6 @@ body .c-line{font:400 14px/1.55 var(--mono);border-left:3px solid var(--oc);padd
 .key{display:flex;flex-wrap:wrap;gap:6px 16px;font:400 13px var(--cond);color:var(--ink-2)}
 .key button{display:inline-flex;align-items:center;gap:6px;border:0;background:none;padding:2px 0;cursor:pointer;font:inherit}
 .key button[aria-pressed="true"]{text-decoration:underline;text-underline-offset:3px}
-.lens-caption{font:400 13px/1.4 var(--mono);color:var(--muted);margin:0 0 8px;min-height:1.4em}
 .explore{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:24px;align-items:start}
 .chart{position:relative;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);background:var(--chart-bg,transparent)}
 #viz{display:block;width:100%;height:auto;font-family:var(--cond)}
@@ -222,10 +221,6 @@ td.ti button:hover{text-decoration:underline}
 tr.sel td{background:var(--paper-2)}
 details summary{cursor:pointer;font:500 13px var(--cond);letter-spacing:.08em;text-transform:uppercase}
 
-.codebook{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:28px 48px}
-.codebook .slot{min-height:180px}
-.cb td.f{font:500 13px var(--mono)}
-.cb td.v{font:400 13px/1.4 var(--cond);color:var(--ink-2)}
 
 footer.band{margin-top:64px}
 .foot{border-top:1px solid var(--ink);padding-block:14px 64px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
@@ -287,8 +282,7 @@ body .foot{border-top:3px solid var(--ink)}
   .feat{grid-template-columns:repeat(2,minmax(0,1fr))}
   .explore{grid-template-columns:1fr}
   .panel{border-left:0!important;border-top:1px solid var(--rule);padding-left:0;padding-top:16px;min-height:0}
-  .codebook{grid-template-columns:1fr}
-}
+  }
 @media (max-width:560px){
   body{font-size:17px}
   .feat{grid-template-columns:1fr}
@@ -305,7 +299,6 @@ body .foot{border-top:3px solid var(--ink)}
 .lead-photo{margin:0;border:2px solid var(--ink);box-shadow:6px 6px 0 var(--ink);transform:rotate(1.2deg)}
 .lead-photo img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover}
 .panel .intro{margin:0;font:400 14px/1.5 var(--serif);color:var(--ink-2)}
-.codebook .about p{margin:0 0 12px;font:400 15px/1.6 var(--serif);max-width:60ch}
 .foot-h{font:700 13px var(--cond);letter-spacing:.1em;text-transform:uppercase;margin:0 0 8px}
 .foot .email{margin:0;font:400 15px var(--mono);user-select:all}
 .foot .links{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px;font:700 15px var(--cond);text-transform:uppercase}
@@ -315,4 +308,3 @@ body .foot{border-top:3px solid var(--ink)}
 .hero.solo h1{font-size:clamp(72px,15vw,210px)}
 .hero.solo h1 span{display:inline}
 .hero.solo h1 span:last-child{display:block}
-.codebook.solo{grid-template-columns:1fr}

@@ -1,6 +1,6 @@
 # Joshua Kalenga — portfolio
 
-A static site built with [Astro](https://astro.build). The homepage has a hero, selected work, an **Explore** section (map, timeline, themes, methods and publications over every piece), a codebook and contact details.
+A static site built with [Astro](https://astro.build). The homepage has a hero, selected work, an **Explore** section (map, timeline, themes, methods and publications over every piece) and contact details.
 
 ## Updating the content
 

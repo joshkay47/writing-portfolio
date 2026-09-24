@@ -101,7 +101,7 @@ const LAYOUT = {
         .on('click',(e,d)=>setFilter({type:'outlet',value:d,label:oName(d)}));
       g.selectAll('.lane-line').data(lanes).join('line').attr('class','gridline').attr('x1',120).attr('x2',W).attr('y1',d=>laneY(d)).attr('y2',d=>laneY(d)).style('stroke-dasharray','1 3');
     };
-    return {pos, back, caption:'Each row is an outlet, and each dot is a piece placed by date. The bars above mark eras of the work.'+(DOM.gap?` The quiet stretch from ${DOM.gap.a.getFullYear()} to ${DOM.gap.b.getFullYear()} is compressed.`:'')};
+    return {pos, back};
   },
 
   themes(){
@@ -123,7 +123,7 @@ const LAYOUT = {
       g.selectAll('.cnt').data(THEMES).join('text').attr('class','cnt').attr('x',160).attr('y',d=>rowY(d)+4).attr('text-anchor','end')
         .text(d=>R.filter(r=>r.th.includes(d)).length);
     };
-    return {pos, cells, back, caption:'Rows are themes, columns are pieces in date order. A piece with three themes fills three rows.'};
+    return {pos, cells, back};
   },
 
   map(){
@@ -166,14 +166,14 @@ const LAYOUT = {
       g.append('text').attr('class','cat-lbl').attr('x',0).attr('y',490).text('No one place').style('cursor','default');
       g.append('text').attr('class','cnt').attr('x',150+none.length*17+4).attr('y',490).text(none.length);
     };
-    return {pos, back, caption:'Dots sit on the first place each piece is about. Rings mark places a piece also covers. Click a place name to list its stories.'};
+    return {pos, back};
   },
 
-  methods(){ return columns(METHODS, r=>r.m, 'method', m=>m, 'Each column is a method. Empty columns are methods you plan to add.'); },
-  outlets(){ return columns([...OUTLETS.map(o=>o.id),'future'], r=>r.o, 'outlet', oShort, 'Each column is an outlet. The dashed column holds space for new outlets.'); },
+  methods(){ return columns(METHODS, r=>r.m, 'method', m=>m); },
+  outlets(){ return columns([...OUTLETS.map(o=>o.id),'future'], r=>r.o, 'outlet', oShort); },
 };
 
-function columns(cats, key, ftype, label, caption){
+function columns(cats, key, ftype, label){
   const cx = d3.scalePoint(cats,[60,W-60]).padding(.5);
   const PER=3, S=19, base=400;
   const pos = new Map();
@@ -199,14 +199,13 @@ function columns(cats, key, ftype, label, caption){
     g.selectAll('.cnt').data(cats).join('text').attr('class','cnt').attr('text-anchor','middle').attr('x',c=>cx(c)).attr('y',base+76)
       .text(c=>R.filter(r=>key(r)===c).length);
   };
-  return {pos, back, caption};
+  return {pos, back};
 }
 
 let current;
 function render(){
   const L = LAYOUT[state.lens]();
   current = L;
-  document.getElementById('caption').textContent = L.caption;
   gBack.selectAll('*').remove();
   L.back(gBack);
   gBack.attr('opacity',0).transition().duration(DUR/2).delay(DUR/3).attr('opacity',1);
@@ -230,13 +229,6 @@ function render(){
 
 /* ---------- phone layout for Explore ---------- */
 const mq = matchMedia('(max-width:640px)');
-const MCAP = {
-  timeline:'Every piece in date order, newest at the bottom. Tap one to open it.',
-  themes:'Tap a theme to see its pieces. A piece can sit under several themes.',
-  map:'Where the pieces are set. Tap a place to see its stories.',
-  methods:'Tap a method to see its pieces.',
-  outlets:'Tap an outlet to see its pieces.',
-};
 const pieceBtn = r => `<li class="vt-item"><button type="button" class="mv-piece" data-i="${r.i}"><i class="dot f-${r.o}"></i><span>${r.t}<small>${oShort(r.o)} · ${fdate(r)} · ${r.m}</small></span></button></li>`;
 function accordion(groups){
   return `<div class="acc">${groups.map(g=> g.items.length
@@ -247,8 +239,7 @@ function accordion(groups){
 function renderMobile(){
   const host = document.getElementById('mview');
   document.querySelector('.explore').classList.toggle('lens-map', state.lens==='map');
-  if(!mq.matches){ host.innerHTML=''; document.getElementById('caption').textContent = current?.caption||''; return; }
-  document.getElementById('caption').textContent = MCAP[state.lens];
+  if(!mq.matches){ host.innerHTML=''; return; }
   let html='';
   if(state.lens==='timeline'){
     let yr=null, out=[]; const seen=new Set();
