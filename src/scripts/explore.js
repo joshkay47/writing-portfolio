@@ -128,40 +128,61 @@ const LAYOUT = {
 
   map(){
     const proj = d3.geoNaturalEarth1().fitExtent([[10,6],[W-10,440]], {type:'MultiPoint',coordinates:[[-128,63],[48,63],[-128,-42],[48,-42]]});
-    const inset = {x:24,y:258,w:230,h:170};
-    const iproj = d3.geoMercator().fitExtent([[inset.x+14,inset.y+26],[inset.x+inset.w-14,inset.y+inset.h-12]], {type:'MultiPoint',coordinates:[[27.2,-13.7],[29.6,-16.1]]});
-    const pxy = k => { const p = PLACES[k]; return p.inset ? iproj([p.lon,p.lat]) : proj([p.lon,p.lat]); };
+    const pxy = k => proj([PLACES[k].lon, PLACES[k].lat]);
     const byPrimary = d3.group(R.filter(r=>r.pl.length), r=>r.pl[0]);
     const pos = new Map();
-    byPrimary.forEach((rs,k)=>{
-      const [cx,cy] = pxy(k);
-      rs.forEach((r,j)=>{ const rr = j===0?0:7.6*Math.sqrt(j), a=j*2.39996; pos.set(r.i,[cx+rr*Math.cos(a), cy+rr*Math.sin(a)]); });
-    });
+    // Dots start on their main place and push apart just enough not to overlap
+    // (e.g. Kabwe and Lusaka are only a few pixels apart at world scale).
+    const nodes = R.filter(r=>r.pl.length).map(r=>{ const [x,y]=pxy(r.pl[0]); return {r, tx:x, ty:y, x:x+((r.i*7)%11-5)*.2, y:y+((r.i*5)%9-4)*.2}; });
+    d3.forceSimulation(nodes)
+      .force('x', d3.forceX(d=>d.tx).strength(.35))
+      .force('y', d3.forceY(d=>d.ty).strength(.35))
+      .force('collide', d3.forceCollide(RAD+1.2))
+      .stop().tick(240);
+    nodes.forEach(n=>pos.set(n.r.i,[n.x,n.y]));
     const none = R.filter(r=>!r.pl.length);
     none.forEach((r,j)=>pos.set(r.i,[150+j*17, 486]));
     const counts = Object.keys(PLACES).map(k=>({k, n:R.filter(r=>r.pl.includes(k)).length, prim:(byPrimary.get(k)||[]).length})).filter(d=>d.n);
+
+    // Labels sit beside each place, clear of its dots, then step apart where they collide
+    const ctx = document.createElement('canvas').getContext('2d');
+    ctx.font = '500 14px "Archivo Narrow", "Arial Narrow", sans-serif';
+    const labels = counts.map(d=>{
+      const [ax,ay] = pxy(d.k), left = PLACES[d.k].label==='l';
+      const reach = d3.max(nodes.filter(n=>n.r.pl[0]===d.k), n=>Math.hypot(n.x-ax, n.y-ay)) || 0;
+      const text = `${PLACES[d.k].name} ${d.n}`, w = ctx.measureText(text).width + 6, off = reach + RAD + 5;
+      const x = left ? ax-off : ax+off;
+      return {d, ax, ay, text, left, x, y:ay+(PLACES[d.k].dy||0), w, x0:left?x-w:x, h:19};
+    });
+    for(let pass=0; pass<300; pass++){
+      let moved=false;
+      labels.sort((a,b)=>a.y-b.y);
+      for(let i=0;i<labels.length;i++) for(let j=i+1;j<labels.length;j++){
+        const a=labels[i], b=labels[j];
+        if(a.x0 < b.x0+b.w && b.x0 < a.x0+a.w && Math.abs(a.y-b.y) < a.h){
+          const push=(a.h-Math.abs(a.y-b.y))/2+.5; a.y-=push; b.y+=push; moved=true;
+        }
+      }
+      if(!moved) break;
+    }
     const back = g=>{
       const path = d3.geoPath(proj);
       g.append('path').attr('class','grat').attr('d',path(d3.geoGraticule10()));
       g.append('path').attr('class','land').attr('d',path(LANDF));
-      // Zambia inset
-      const z = proj([28.4,-14.9]);
-      g.append('path').attr('class','leader').attr('d',`M${inset.x+inset.w},${inset.y+inset.h/2} L${z[0]},${z[1]}`);
-      g.append('circle').attr('cx',z[0]).attr('cy',z[1]).attr('r',9).attr('class','pl-ring').style('stroke-dasharray','2 2');
-      g.append('rect').attr('class','inset-frame').attr('x',inset.x).attr('y',inset.y).attr('width',inset.w).attr('height',inset.h);
-      g.append('clipPath').attr('id','ic').append('rect').attr('x',inset.x).attr('y',inset.y).attr('width',inset.w).attr('height',inset.h);
-      g.append('path').attr('class','land').attr('clip-path','url(#ic)').attr('d',d3.geoPath(iproj)(LANDF));
-      g.append('text').attr('class','axis-lbl').attr('x',inset.x+8).attr('y',inset.y+16).text('CENTRAL ZAMBIA');
-      // place markers + labels
-      const pg = g.selectAll('.pl').data(counts).join('g').attr('class','pl');
-      pg.filter(d=>!d.prim).append('circle').attr('class','pl-ring').attr('r',5).attr('cx',d=>pxy(d.k)[0]).attr('cy',d=>pxy(d.k)[1]);
+      const pg = g.selectAll('.pl').data(labels).join('g').attr('class','pl');
+      // a thin line back to the place when a label had to move away from it
+      pg.filter(l=>Math.abs(l.y-l.ay)>7).append('path').attr('class','leader')
+        .attr('d',l=>`M${l.left?l.x+2:l.x-2},${l.y-4} L${l.ax},${l.ay}`);
+      pg.filter(l=>!l.d.prim).append('circle').attr('class','pl-ring').attr('r',5).attr('cx',l=>l.ax).attr('cy',l=>l.ay);
+      // generous invisible target so rings (places with no dot of their own) can be clicked too
+      pg.filter(l=>!l.d.prim).append('circle').attr('class','pl-hit').attr('r',12).attr('cx',l=>l.ax).attr('cy',l=>l.ay)
+        .on('click',(e,l)=>setFilter({type:'place',value:l.d.k,label:PLACES[l.d.k].name}));
       pg.append('text').attr('class','pl-lbl')
-        .classed('on',d=>state.filter?.type==='place'&&state.filter.value===d.k)
-        .attr('x',d=>{const [x]=pxy(d.k), off = 10 + (d.prim>1?Math.sqrt(d.prim)*7.6:0); return PLACES[d.k].label==='l'?x-off:x+off;})
-        .attr('text-anchor',d=>PLACES[d.k].label==='l'?'end':'start')
-        .attr('y',d=>pxy(d.k)[1]+4)
-        .text(d=>`${PLACES[d.k].name} ${d.n}`)
-        .on('click',(e,d)=>setFilter({type:'place',value:d.k,label:PLACES[d.k].name}));
+        .classed('on',l=>state.filter?.type==='place'&&state.filter.value===l.d.k)
+        .attr('x',l=>l.x).attr('y',l=>l.y+4)
+        .attr('text-anchor',l=>l.left?'end':'start')
+        .text(l=>l.text)
+        .on('click',(e,l)=>setFilter({type:'place',value:l.d.k,label:PLACES[l.d.k].name}));
       g.append('line').attr('class','baseline').attr('x1',0).attr('x2',W).attr('y1',462).attr('y2',462);
       g.append('text').attr('class','cat-lbl').attr('x',0).attr('y',490).text('No one place').style('cursor','default');
       g.append('text').attr('class','cnt').attr('x',150+none.length*17+4).attr('y',490).text(none.length);
@@ -292,7 +313,7 @@ function restyle(){
   gDots.selectAll('circle').filter(d=>d.i===state.sel).raise();
   gBack.selectAll('.cat-lbl,.pl-lbl').classed('on',function(d){
     const f=state.filter; if(!f) return false;
-    const v = d && d.k ? d.k : d; return v===f.value;
+    const v = d?.d?.k ?? d?.k ?? d; return v===f.value;
   });
   document.querySelectorAll('#key button').forEach(b=>b.setAttribute('aria-pressed', String(state.filter?.type==='outlet'&&state.filter.value===b.dataset.o)));
   panel(); table();

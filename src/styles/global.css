@@ -177,7 +177,9 @@ body .c-line{font:400 14px/1.55 var(--mono);border-left:3px solid var(--oc);padd
 #viz .grat{fill:none;stroke:var(--grid);stroke-width:.5}
 #viz .inset-frame{fill:var(--paper);stroke:var(--ink-2);stroke-width:1}
 #viz .leader{stroke:var(--ink-2);stroke-width:.8;fill:none;stroke-dasharray:2 2}
-#viz .pl-ring{fill:none;stroke:var(--ink-2);stroke-width:1}
+#viz .pl-ring{fill:none;stroke:var(--ink-2);stroke-width:1.5}
+#viz .pl-hit{fill:transparent;cursor:pointer}
+#viz .pl:hover .pl-ring{stroke:var(--red);stroke-width:2.5}
 #viz .pl-lbl{fill:var(--ink);font-size:14px;font-weight:500;cursor:pointer;paint-order:stroke;stroke:var(--paper);stroke-width:3px;stroke-linejoin:round}
 #viz .pl-lbl:hover,#viz .pl-lbl.on{text-decoration:underline}
 #viz .era rect{fill:var(--paper-2);stroke:var(--rule)}

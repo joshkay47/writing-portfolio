@@ -1,18 +1,78 @@
 {
-  "_help": "Coordinates for every place used in the sheet. label: which side the map label sits (l/r); dy: nudge the label up (-) or down (+) in pixels; inset: show in the Central Zambia inset.",
-  "Colorado Springs": { "lon": -104.82, "lat": 38.83, "label": "r" },
-  "Denver": { "lon": -104.99, "lat": 39.74, "label": "l", "dy": -8 },
-  "Stanford": { "lon": -122.17, "lat": 37.43, "label": "l" },
-  "Kabwe": { "lon": 28.45, "lat": -14.44, "inset": true, "label": "r" },
-  "Lusaka": { "lon": 28.32, "lat": -15.39, "inset": true, "label": "r" },
-  "London": { "lon": -0.13, "lat": 51.51, "label": "r", "dy": 16 },
-  "Liverpool": { "lon": -2.98, "lat": 53.41, "label": "l", "dy": -6 },
-  "England": { "lon": -1.6, "lat": 52.6, "label": "r", "dy": -4 },
-  "Salzburg": { "lon": 13.04, "lat": 47.81, "label": "r" },
-  "Frankfurt": { "lon": 8.68, "lat": 50.11, "label": "r", "dy": -6 },
-  "Naples": { "lon": 14.27, "lat": 40.85, "label": "r" },
-  "Johannesburg": { "lon": 27.98, "lat": -26.23, "label": "r" },
-  "Accra": { "lon": -0.19, "lat": 5.6, "label": "l" },
-  "Montevideo": { "lon": -56.16, "lat": -34.9, "label": "r" },
-  "Buenos Aires": { "lon": -58.38, "lat": -34.6, "label": "l" }
+  "_help": "Coordinates for every place used in the sheet. label: which side of the place its map label sits (l or r). Overlapping labels are spaced out automatically.",
+  "Colorado Springs": {
+    "lon": -104.82,
+    "lat": 38.83,
+    "label": "r"
+  },
+  "Denver": {
+    "lon": -104.99,
+    "lat": 39.74,
+    "label": "l"
+  },
+  "Stanford": {
+    "lon": -122.17,
+    "lat": 37.43,
+    "label": "l"
+  },
+  "Kabwe": {
+    "lon": 28.45,
+    "lat": -14.44,
+    "label": "r"
+  },
+  "Lusaka": {
+    "lon": 28.32,
+    "lat": -15.39,
+    "label": "r"
+  },
+  "London": {
+    "lon": -0.13,
+    "lat": 51.51,
+    "label": "r"
+  },
+  "Liverpool": {
+    "lon": -2.98,
+    "lat": 53.41,
+    "label": "l"
+  },
+  "England": {
+    "lon": -1.6,
+    "lat": 52.6,
+    "label": "l"
+  },
+  "Salzburg": {
+    "lon": 13.04,
+    "lat": 47.81,
+    "label": "r"
+  },
+  "Frankfurt": {
+    "lon": 8.68,
+    "lat": 50.11,
+    "label": "r"
+  },
+  "Naples": {
+    "lon": 14.27,
+    "lat": 40.85,
+    "label": "r"
+  },
+  "Johannesburg": {
+    "lon": 27.98,
+    "lat": -26.23,
+    "label": "r"
+  },
+  "Accra": {
+    "lon": -0.19,
+    "lat": 5.6,
+    "label": "l"
+  },
+  "Montevideo": {
+    "lon": -56.16,
+    "lat": -34.9,
+    "label": "r"
+  },
+  "Buenos Aires": {
+    "lon": -58.38,
+    "lat": -34.6,
+    "label": "l"
+  }
 }

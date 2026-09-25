@@ -783,20 +783,17 @@
   "Denver": {
    "lon": -104.99,
    "lat": 39.74,
-   "label": "l",
-   "dy": -8
+   "label": "l"
   },
   "England": {
    "lon": -1.6,
    "lat": 52.6,
-   "label": "r",
-   "dy": -4
+   "label": "l"
   },
   "Frankfurt": {
    "lon": 8.68,
    "lat": 50.11,
-   "label": "r",
-   "dy": -6
+   "label": "r"
   },
   "Johannesburg": {
    "lon": 27.98,
@@ -806,25 +803,21 @@
   "Kabwe": {
    "lon": 28.45,
    "lat": -14.44,
-   "inset": true,
    "label": "r"
   },
   "Liverpool": {
    "lon": -2.98,
    "lat": 53.41,
-   "label": "l",
-   "dy": -6
+   "label": "l"
   },
   "London": {
    "lon": -0.13,
    "lat": 51.51,
-   "label": "r",
-   "dy": 16
+   "label": "r"
   },
   "Lusaka": {
    "lon": 28.32,
    "lat": -15.39,
-   "inset": true,
    "label": "r"
   },
   "Montevideo": {
