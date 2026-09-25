@@ -1,6 +1,10 @@
 ---
 import '../styles/global.css';
+import { asset } from '../lib/data.js';
 const { title, description = '' } = Astro.props;
+// Absolute URLs for link previews (LinkedIn, iMessage, X, WhatsApp)
+const pageUrl = new URL(asset(''), Astro.site).href;
+const shareImage = new URL(asset('og.jpg'), Astro.site).href;
 ---
 <!doctype html>
 <html lang="en">
@@ -9,6 +13,17 @@ const { title, description = '' } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
+    <link rel="canonical" href={pageUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={pageUrl} />
+    <meta property="og:title" content={title} />
+    {description && <meta property="og:description" content={description} />}
+    <meta property="og:image" content={shareImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
+    <meta property="og:image:alt" content={`${title}: portfolio`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content={shareImage} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
