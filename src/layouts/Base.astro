@@ -30,6 +30,22 @@ const shareImage = new URL(asset('og.jpg'), Astro.site).href;
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@800;900&family=Archivo+Narrow:wght@500;700&family=Courier+Prime:wght@400;700&display=swap"
     />
+    {import.meta.env.PROD && (
+      <script is:inline data-goatcounter="https://joshportfolio.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+    )}
+    <script is:inline>
+      // Count clicks on links that leave the site. Each shows in GoatCounter as an
+      // event named after the piece (data-gc), with where it was clicked as the title.
+      document.addEventListener('click', (e) => {
+        const a = e.target.closest('a[href]');
+        if (!a || a.host === location.host || !window.goatcounter || !window.goatcounter.count) return;
+        window.goatcounter.count({
+          path: a.dataset.gc || a.href,
+          title: a.dataset.gcFrom || a.textContent.trim(),
+          event: true,
+        });
+      });
+    </script>
   </head>
   <body>
     <a class="skip" href="#work">Skip to work</a>

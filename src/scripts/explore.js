@@ -298,7 +298,7 @@ function openSheet(i){
       <dt>Themes</dt><dd>${r.th.join(', ')}</dd><dt>Places</dt><dd>${r.pl.map(k=>PLACES[k].name).join(', ')||'—'}</dd>
       ${r.project?`<dt>Project</dt><dd>${PROJECTS[r.project].name}</dd>`:''}</dl>
     ${r.line?`<p class="c-line">${r.line}</p>`:''}
-    <a class="go" href="${r.u}" target="_blank" rel="noopener">${r.o==='film'?'Watch the film':'Read at '+oName(r.o)} ↗</a>`;
+    <a class="go" href="${r.u}" target="_blank" rel="noopener" data-gc="${r.t.replace(/"/g,'&quot;')}" data-gc-from="Explore">${r.o==='film'?'Watch the film':'Read at '+oName(r.o)} ↗</a>`;
   sh.hidden=false; document.getElementById('sheetBg').hidden=false;
   document.getElementById('shClose').onclick=closeSheet; document.getElementById('shClose').focus();
 }
@@ -357,7 +357,7 @@ function panel(){
         ${r.project&&PROJECTS[r.project].credit&&r.o==='film'?`<dt>Credit</dt><dd>${PROJECTS[r.project].credit}</dd>`:''}
       </dl>
       ${r.line?`<p class="c-line">${r.line}</p>`:''}
-      <a class="go" href="${r.u}" target="_blank" rel="noopener">${r.o==='film'?'Watch the film':'Read at '+oName(r.o)} ↗</a>`;
+      <a class="go" href="${r.u}" target="_blank" rel="noopener" data-gc="${r.t.replace(/"/g,'&quot;')}" data-gc-from="Explore">${r.o==='film'?'Watch the film':'Read at '+oName(r.o)} ↗</a>`;
   } else if(f){
     const rs = R.filter(matches);
     p.innerHTML = `${chip}<div class="ph">${rs.length} piece${rs.length===1?'':'s'}</div>

@@ -11,7 +11,7 @@ const links = copy.links.filter((l) => l.url);
     </div>
     <div>
       <h2 class="foot-h">Elsewhere</h2>
-      <ul class="links">{links.map((l) => <li><a href={l.url} target="_blank" rel="noopener">{l.label} ↗</a></li>)}</ul>
+      <ul class="links">{links.map((l) => <li><a href={l.url} target="_blank" rel="noopener" data-gc={l.label} data-gc-from="Footer">{l.label} ↗</a></li>)}</ul>
     </div>
     <div>
       {copy.colophon && <><h2 class="foot-h">Colophon</h2><p class="colophon">{copy.colophon}</p></>}

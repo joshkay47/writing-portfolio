@@ -30,9 +30,9 @@ const recordCount = items.reduce((n, f) => n + (f.project ? 2 : 1), 0);
                 <Thumb image={film.image} outletName={f.project.name} />
                 <div class="p-text">
                   <div class="p-kicker">{film.method}, {formatDate(film)}</div>
-                  <h3><a href={film.url} target="_blank" rel="noopener">{f.project.name}</a></h3>
+                  <h3><a href={film.url} target="_blank" rel="noopener" data-gc={film.title} data-gc-from="Selected work: title">{f.project.name}</a></h3>
                   {f.project.description && <p class="p-desc">{f.project.description}</p>}
-                  <a class="p-link" href={film.url} target="_blank" rel="noopener">→ {f.project.watchLabel}</a>
+                  <a class="p-link" href={film.url} target="_blank" rel="noopener" data-gc={film.title} data-gc-from="Selected work: watch film">→ {f.project.watchLabel}</a>
                   {essay && (
                     <div class="clip" data-o={essay.outlet}>
                       {essay.image && <img class="clip-img" src={asset(essay.image.src)} alt="" loading="lazy" />}
@@ -40,7 +40,7 @@ const recordCount = items.reduce((n, f) => n + (f.project ? 2 : 1), 0);
                         <span>No. {essay.n}</span>
                         <span class="src"><i class={`dot f-${essay.outlet}`}></i>{outletById[essay.outlet].short} · {formatDate(essay)}</span>
                       </div>
-                      <a class="p-link" href={essay.url} target="_blank" rel="noopener">→ {f.project.essayLabel}</a>
+                      <a class="p-link" href={essay.url} target="_blank" rel="noopener" data-gc={essay.title} data-gc-from="Selected work: clipping">→ {f.project.essayLabel}</a>
                       {f.project.essayNote && <p class="p-note">{f.project.essayNote}</p>}
                     </div>
                   )}
@@ -59,7 +59,7 @@ const recordCount = items.reduce((n, f) => n + (f.project ? 2 : 1), 0);
             </div>
             <Thumb image={p.image} outletName={outlet.name} />
             <MiniStrip hits={[p.id]} />
-            <h3><a href={p.url} target="_blank" rel="noopener">{p.title}</a></h3>
+            <h3><a href={p.url} target="_blank" rel="noopener" data-gc={p.title} data-gc-from="Selected work">{p.title}</a></h3>
             <div class="row"><span>{formatDate(p)}</span><span>{p.method}</span></div>
             {p.line ? <p class="c-line">{p.line}</p> : <Slot class="line" label="Card line" hint="One or two sentences" />}
           </article>
