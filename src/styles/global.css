@@ -30,7 +30,7 @@ button{font:inherit;color:inherit}
 .slot b{font-weight:500;color:var(--ink-2);letter-spacing:.04em;text-transform:uppercase;font-size:11px}
 
 /* masthead */
-header.site{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;padding-block:22px 0}
+header.site{display:flex;justify-content:flex-end;align-items:baseline;gap:16px;flex-wrap:wrap;padding-block:22px 0}
 .wordmark{font:600 15px var(--cond);letter-spacing:.14em;text-transform:uppercase}
 nav.site{display:flex;gap:20px;font:500 14px var(--cond);letter-spacing:.06em;text-transform:uppercase}
 nav.site a{text-decoration:none;color:var(--ink-2)}

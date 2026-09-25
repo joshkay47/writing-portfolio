@@ -1,6 +1,6 @@
 {
   "_help": "Site settings that don't fit the sheet. Pieces are matched by the start of their title.",
-  "name": "Joshua Kalenga",
+  "name": "Josh Kalenga",
   "outlets": [
     {
       "id": "catalyst",
@@ -52,15 +52,15 @@
     "_help": "Override an article's thumbnail. src: image URL, or null for no image. fit: cover (default), contain or top.",
     "Kabwe Ka Mukuba": {
       "src": "https://i0.wp.com/thecatalystnews.com/wp-content/uploads/2023/05/FEATURES_toxictown_joshkalenga.png?fit=1200%2C600&ssl=1",
-      "credit": "Photo: Joshua Kalenga"
+      "credit": "Photo: Josh Kalenga"
     },
     "Ethics Under the Lens": {
       "src": "https://i0.wp.com/thecatalystnews.com/wp-content/uploads/2023/05/FEATURES_toxictown2_joshkalenga.png?fit=936%2C464&ssl=1",
-      "credit": "Photo: Joshua Kalenga"
+      "credit": "Photo: Josh Kalenga"
     },
     "'Link'": {
       "src": "https://i0.wp.com/thecatalystnews.com/wp-content/uploads/2020/10/LIFE_22link22_JoshuaKalenga_screenshot.jpg?resize=605%2C1024&ssl=1",
-      "credit": "Screenshot: Joshua Kalenga",
+      "credit": "Screenshot: Josh Kalenga",
       "fit": "top"
     },
     "Alisson Becker": {
